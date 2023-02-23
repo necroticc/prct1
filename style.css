@@ -1,0 +1,42 @@
+.t1tle{
+    display: flex;
+}
+.nstu-logo{
+    max-height: 55px;
+}
+.t1tle > h1{
+    margin-left: 550px;
+}
+.press1{
+    display: flex;
+}
+.press1>button{
+    margin-right: 196px;
+    margin-top: 15px;
+    max-height: 30px;
+}
+.press1>button:hover{
+    background-color: rgb(150, 150, 150);
+}
+.press2{
+    display: flex;
+}
+.press2>button{
+    margin-right: 175px;
+    margin-top: 15px;
+    max-height: 30px;
+}
+.press2>button:hover{
+    background-color: rgb(150, 150, 150);
+}
+.press3{
+    display: flex;
+}
+.press3>button{
+    margin-right: 30px;
+    margin-top: 15px;
+    max-height: 30px;
+}
+.press3>button:hover{
+    background-color: rgb(150, 150, 150);
+}
