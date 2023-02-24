@@ -1,5 +1,6 @@
 let area = document.getElementById('area');
 let cell = document.getElementsByClassName('cell');
+let currentPlayer = document.getElementById('curPlayer');
 
 let player = "X";
 let winIndex = [
@@ -37,7 +38,41 @@ function cellClick() {
             data.push(parseInt(cell[i].getAttribute('pos')));
         }
     }
-    
-    player = player == "X" ? "O" : "X";
-    console.log(data);
+
+    if(checkWin(data)) {
+        restart("Выиграли: " + player)
+    } else {
+        let draw = true;
+        for(let i in cell) {
+            if(cell[i].innerHTML == '') draw = false;
+        }
+        if(draw){
+            restart("Ничья!")
+        }
+        player = player == "X" ? "O" : "X";
+        currentPlayer.innerHTML = player.toUpperCase();
+    }
+}
+
+function checkWin(data){
+    for(let i in winIndex) {
+        let win = true;
+        for(let j in winIndex[i]){
+            let id = winIndex[i][j];
+            let ind = data.indexOf(id);
+
+            if(ind == -1){
+                win = false;
+            }
+        }
+        if(win) return true;
+    }
+    return false;
+}
+
+function restart(text){
+    alert(text);
+    for(let i = 0; i<9;i++){
+        cell[i].innerHTML = '';
+    }
 }

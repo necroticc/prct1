@@ -11,29 +11,51 @@
 </head>
 
 <body>
+    
     <div class="t1tle">
-        <img class="nstu-logo" src="https://www.nstu.ru/img/logo.png" alt="картинка нгту((" width="300px">
+        <img src="https://www.nstu.ru/img/logo.png" alt="картинка нгту((" height="50px">
         <h1>Практика 1</h1>
     </div>
-    <h2>1 задание. Функция находит в строке заданную подстроку и возвращает номер строки на нее. </h2>
-    <div class="press1">
-        <button onclick="press1()">Ввести строку</button>
-        <h3>Исходная строка = <span id="str"></span></h3>
-    </div>
-    <div class="press2">
-        <button onclick="press2()">Ввести подстроку</button>
-        <h3>Подстрока = <span id="str2"></span></h3>
-    </div>
-    <div class="press3">
-        <button onclick="press3()">Проверка на наличие подстроки в строке</button>
-        <h3>Вхождение подстроки в строке: <span id="pr"></span><span id="pr2"></span></h3>
-    </div>
-    <h2>2 задание.	Крестики-нолики.</h2>
-    <div class="content">
-        <div id="area">
+
+
+    <div class="task1">
+        <h2>1 задание. Функция находит в строке заданную подстроку и возвращает номер строки на нее. </h2>
+        
+        <div class="press1">
+            <button onclick="press1()">Ввод</button>
+            <h3 dispay="inline">Исходная строка = <span id="str"></span></h3>
         </div>
-        <script src="task2.js"></script>
+        <br>
+        <div class="press2">
+            <button onclick="press2()">Ввод</button>
+            <h3>Подстрока = <span id="str2"></span></h3>
+        </div>
+        <br>
+        <div class="press3">
+            <button onclick="press3()">Проверка</button>
+            <h3>Вхождение подстроки в строке: <span id="pr"></span><span id="pr2"></span></h3>
+        </div>
     </div>
+
+
+    <div class="task2">
+        <h2>2 задание. Крестики-нолики.</h2>
+
+        <div class=" content">
+
+            <div class="menu">
+                <p class="queue">Сейчас ходит: <span id="curPlayer">X</span></p>
+            </div>
+
+            <div id="area">
+
+            </div>
+
+            <script src="task2.js"></script>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

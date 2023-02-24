@@ -1,41 +1,64 @@
 .t1tle{
+    margin: 0px;
     display: flex;
+    background-color: white;
 }
-.nstu-logo{
-    max-height: 55px;
-}
-.t1tle > h1{
+.t1tle > h1 {
     margin-left: 550px;
+    text-align: center;
+}
+.t1tle > span {
+    text-decoration: underline;
+}
+.t1tle > p {
+    font-size: larger;
+    font-style:oblique;
+}
+.task1{
+    display: block;
 }
 .press1{
-    display: flex;
+    display: inline;
+}
+.press1>h3{
+    display: inline;
 }
 .press1>button{
-    margin-right: 196px;
+    margin-right: 5px;
     margin-top: 15px;
     max-height: 30px;
+    display: inline;
 }
 .press1>button:hover{
     background-color: rgb(150, 150, 150);
 }
 .press2{
-    display: flex;
+    display: inline;
+}
+.press2>h3{
+    display: inline;
 }
 .press2>button{
-    margin-right: 175px;
+    margin-right: 5px;
     margin-top: 15px;
     max-height: 30px;
+    display: inline;
 }
 .press2>button:hover{
     background-color: rgb(150, 150, 150);
 }
 .press3{
-    display: flex;
+    display: inline;
+}
+.press3>h3{
+    display: inline;
 }
 .press3>button{
-    margin-right: 30px;
+    margin-right: 5px;
     margin-top: 15px;
     max-height: 30px;
+    display: inline;
+
 }
 .press3>button:hover{
     background-color: rgb(150, 150, 150);
@@ -52,6 +75,7 @@
     border: 2px solid #000;
     font-size: 0;
     background-color: blanchedalmond;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .cell{
@@ -69,4 +93,9 @@
 
 .cell:hover{
     background-color:rgb(255, 153, 0);
+}
+
+.queue {
+    font-size:large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
