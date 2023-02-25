@@ -2,6 +2,10 @@ let area = document.getElementById('area');
 let cell = document.getElementsByClassName('cell');
 let currentPlayer = document.getElementById('curPlayer');
 
+document.getElementById("pX").innerHTML = 0;
+document.getElementById("pO").innerHTML = 0;
+document.getElementById("pDraw").innerHTML = 0;
+
 let player = "X";
 let winIndex = [
     [1,2,3],
@@ -40,6 +44,11 @@ function cellClick() {
     }
 
     if(checkWin(data)) {
+        if(player=="X"){
+            pX.innerHTML++;
+        } else {
+            pO.innerHTML++;
+        }
         restart("Выиграли: " + player)
     } else {
         let draw = true;
@@ -47,6 +56,7 @@ function cellClick() {
             if(cell[i].innerHTML == '') draw = false;
         }
         if(draw){
+            pDraw.innerHTML++; 
             restart("Ничья!")
         }
         player = player == "X" ? "O" : "X";
@@ -76,3 +86,5 @@ function restart(text){
         cell[i].innerHTML = '';
     }
 }
+
+console.log(pX, pO, pDraw);

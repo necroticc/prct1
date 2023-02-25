@@ -1,7 +1,9 @@
+body {
+    background-color: rgb(171, 216, 255);
+}
 .t1tle{
     margin: 0px;
     display: flex;
-    background-color: white;
 }
 .t1tle > h1 {
     margin-left: 550px;
@@ -12,10 +14,13 @@
 }
 .t1tle > p {
     font-size: larger;
-    font-style:oblique;
+    font-style: oblique;
 }
 .task1{
     display: block;
+}
+.task1 > h2 {
+    text-align: center;
 }
 .press1{
     display: inline;
@@ -63,7 +68,9 @@
 .press3>button:hover{
     background-color: rgb(150, 150, 150);
 }
-
+.task2 {
+    text-align: center;
+}
 
 .tic-tac-toe{
     margin-top: 50px;
@@ -73,12 +80,14 @@
 #area{
     width: 306px;
     border: 2px solid #000;
-    font-size: 0;
-    background-color: blanchedalmond;
+    display: inline-block;
+    background-color: rgb(100, 160, 255);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
 }
 
 .cell{
+    border-color: rgb(40, 126, 255);
     width: 100px;
     height: 100px;
     line-height: 100px;
@@ -92,10 +101,36 @@
 }
 
 .cell:hover{
-    background-color:rgb(255, 153, 0);
+    background-color:rgb(40, 126, 255);
 }
 
 .queue {
     font-size:large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+}
+.menu {
+    position: absolute;
+    display: inline-block;
+    margin: 0px;
+    left: 33%;
+    border-style: solid;
+    width: 155px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+.menu p {
+    margin: 2px;
+    margin-left: 7px;
+    margin-right: 7px;
+    display: inline-block;
+    font-size: large;
+}
+#curPlayer{
+    color:blue;
+}
+.menu span {
+    font-style: normal;
+    font-weight:bolder;
 }

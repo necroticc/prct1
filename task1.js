@@ -11,7 +11,7 @@ function press2(){
 function press3(){
     let pr2 = '';
     let pr = str.indexOf(str2);
-    if(pr == -1){
+    if(pr == -1 || pr == 0){
         pr = 'отсутствует';
         pr2 = '';
     } else {
