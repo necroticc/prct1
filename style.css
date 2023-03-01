@@ -97,7 +97,6 @@ body {
     border: 1px solid #000;
     cursor: pointer;
     vertical-align: middle;
-    transition: backgrond .1s;
 }
 
 .cell:hover{

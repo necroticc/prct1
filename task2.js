@@ -23,7 +23,7 @@ for(let i = 1; i <= 9; i++) {
 }
 
 for(let i = 0; i < cell.length; i++){
-    cell[i].addEventListener('click', cellClick, false);
+    cell[i].addEventListener('click', cellClick);
 }
 
 function cellClick() {
@@ -86,5 +86,3 @@ function restart(text){
         cell[i].innerHTML = '';
     }
 }
-
-console.log(pX, pO, pDraw);
